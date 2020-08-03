@@ -6,7 +6,16 @@ namespace hello_console
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            String message = BuildMessage("Andrew");
+
+            Console.WriteLine(message);
+        }
+
+
+
+        static String BuildMessage(String name)
+        {
+            return "Hello " + name + "!";
         }
     }
 }
